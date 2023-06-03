@@ -81,14 +81,14 @@ def helloTriangle():
 
 def helloText():
     win = GraphWin()
-    text = Text(Point(100, 100), "Hello World")
-    text.draw(win)
-    text.setSize(20)
-    text.setFace("times roman")
-    text.setTextColor("magenta")
+    message = Text(Point(100, 100), "Hello World")
+    message.draw(win)
+    message.setSize(20)
+    message.setFace("times roman")
+    message.setTextColor("magenta")
 
     win.getMouse()
-    text.setText("Goodbye")
+    message.setText("Goodbye")
 
 
 def helloEntry():
@@ -111,8 +111,8 @@ def clickTest():
 
     for i in range(10):
         p = win.getMouse()
-        text = Text(p, str(p.getX()) + " " + str(p.getY()))
-        text.draw(win)
+        location = Text(p, str(p.getX()) + " " + str(p.getY()))
+        location.draw(win)
 
 
 def drawStickFigure():
