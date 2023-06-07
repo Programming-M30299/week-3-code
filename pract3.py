@@ -53,6 +53,7 @@ def helloLines():
     line1.setWidth(5)
     line1.setOutline("red")
     line1.move(0, 100)
+    print("line1's start =", line1.getP1(), "end =", line1.getP2())
 
     start = Point(0, 50)
     end = Point(200, 50)
@@ -77,6 +78,17 @@ def helloTriangle():
     triangle = Polygon(Point(100, 30), Point(30, 100), Point(170, 100))
     triangle.draw(win)
     triangle.setFill("red")
+
+
+def helloHexagon():
+    win = GraphWin()
+    points = [Point(100, 30), Point(30, 70), Point(30, 130),
+              Point(100, 170), Point(170, 130), Point(170, 70)]
+    hexagon = Polygon(points)
+    
+    hexagon.draw(win)
+    hexagon.setFill("blue")
+    hexagon.move(30, -30)
 
 
 def helloText():
