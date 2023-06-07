@@ -6,12 +6,12 @@ def helloGraphics():
     p = Point(30, 90)
     x = p.getX()
     y = p.getY()
-    print("x =", x, ", y =", y)
+    print("x =", x, "y =", y)
     p.draw(myWin)
     p.move(70, -40)
     x = p.getX()
     y = p.getY()
-    print("x =", x, ", y =", y)
+    print("x =", x, "y =", y)
 
 
 def twoPoints():
@@ -31,18 +31,18 @@ def helloCircles():
     circle1.draw(win)
     circle2 = Circle(Point(30, 30), 10)
     circle2.draw(win)
-    circle1.setWidth(7)
-    circle1.setOutline("cyan")
 
-    circle2.setWidth(3)
+    circle1.setWidth(7)
+
+    circle1.setOutline("blue")
     circle2.setOutline("purple")
 
     circle2.setFill("green")
     circle1.setFill("yellow")
 
-    circle2.move(10, 20)
+    circle2.move(50, 75)
 
-    print("circle1's radius =", circle1.getRadius())
+    print("circle2's radius =", circle2.getRadius())
     print("circle2's centre =", circle2.getCenter())
 
 
@@ -70,6 +70,7 @@ def helloRectangles():
 
     square = Rectangle(Point(50, 50), Point(100, 100))
     square.draw(win)
+    square.setFill("white")
     square.setOutline("black")
 
 
