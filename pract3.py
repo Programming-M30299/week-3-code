@@ -1,6 +1,13 @@
 from graphics import *
 
 
+def helloGraphics():
+    win = GraphWin()
+    message = Text(Point(100, 100), "Hello world!")
+    message.draw(win)
+    win.getMouse()
+
+
 def drawStickFigure():
     win = GraphWin("Stick figure")
     head = Circle(Point(100, 60), 20)
