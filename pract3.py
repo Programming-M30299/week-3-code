@@ -3,7 +3,7 @@ from graphics import *
 
 def helloGraphics():
     win = GraphWin()
-    message = Text(Point(100, 100), "Hello world!")
+    message = Text(Point(100, 100), "Hello graphics!")
     message.draw(win)
     win.getMouse()
 
