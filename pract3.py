@@ -14,6 +14,8 @@ def draw_stick_figure():
     head.draw(win)
     body = Line(Point(100, 80), Point(100, 120))
     body.draw(win)
+    # Add your code here
+    win.get_mouse()
 
 
 def draw_line():
