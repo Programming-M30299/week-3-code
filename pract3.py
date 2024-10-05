@@ -1,7 +1,7 @@
 from graphix import Window, Text, Circle, Line, Point
 
 
-def hello_graphics():
+def hello_graphix():
     win = Window()
     message = Text(Point(100, 100), "Hello graphix!")
     message.draw(win)
