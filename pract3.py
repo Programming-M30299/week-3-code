@@ -3,7 +3,7 @@ from graphix import Window, Text, Circle, Line, Point
 
 def hello_graphics():
     win = Window()
-    message = Text(Point(100, 100), "Hello graphics!")
+    message = Text(Point(100, 100), "Hello graphix!")
     message.draw(win)
     win.get_mouse()
 
