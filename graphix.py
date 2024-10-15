@@ -32,7 +32,7 @@ from graphix import Window, Circle, Point
 def main():
     w = Window("My Circle", 200, 200)
     c = Circle(Point(50,50), 10)
-    c.draw(win)
+    c.draw(w)
     w.get_mouse() # Pause to view result
     w.close()    # Close window when done
 
